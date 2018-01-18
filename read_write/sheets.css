@@ -95,6 +95,11 @@
 
 }
 
+#messages {
+    height: 400px;
+    overflow-y: scroll;
+}
+
 #messages .message {
     overflow: hidden;
     /* float: left; */
@@ -176,3 +181,11 @@
     word-wrap:break-word;
 }
 
+form#address-book-form {
+    position: fixed;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+    height: 200px;
+}
