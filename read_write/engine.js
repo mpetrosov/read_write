@@ -2,7 +2,8 @@
 var addressBookMessages = {};
 var messagesContainer = null;
 var addressBookForm = null;
-var apiUrl = 'http://www.codegorilla.nl/read_write/api.php';
+// The URL of the WORKING API from which we fetch and store data.
+var apiUrl = 'http://localhost/read_write/api.php';
 
 // This is the function generates an API URL used to insert messages.
 // We shall be calling it using async HTTP request (to avoid page reloads). 
@@ -109,6 +110,9 @@ document.addEventListener('DOMContentLoaded', function() {
         addressBookForm.reset();
 
         document.getElementById('record').value = "";
+
+        // Scroll down
+        messagesContainer.scrollTop = messagesContainer.scrollHeight;
     }
 
 
